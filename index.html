@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Mi Dieta</title>
+  <meta name="description" content="Dieta diaria adaptada a tus entrenos">
+  <meta name="theme-color" content="#f3f5f1" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0e1410" media="(prefers-color-scheme: dark)">
+  <meta name="color-scheme" content="light dark">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Mi Dieta">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="icons/icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top">
+    <h1 id="title">Mi Dieta</h1>
+    <div class="sub" id="subtitle"></div>
+  </header>
+  <main id="app"></main>
+
+  <nav class="tabs" id="tabs" aria-label="Secciones"></nav>
+
+  <div class="overlay" id="overlay"></div>
+  <div class="sheet" id="sheet" role="dialog" aria-modal="true"></div>
+  <div class="busy" id="busy" role="status" aria-live="polite"><div class="spinner"></div><div id="busyText"></div></div>
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="calc.js"></script>
+  <script src="ai.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
